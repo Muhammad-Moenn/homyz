@@ -1,0 +1,178 @@
+
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 140px;
+}
+.c-left{
+    flex-basis: 50%;
+    padding: 20px;
+}
+.c-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.c-img-box{
+    border: 5px solid silver;
+    border-radius: 200px 200px 0px 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.c-right .c-img-box img{
+    width: 320px;
+    height: 480px;
+    
+
+}
+.c-right .c-img-box img:hover{
+    transform: scale(1.06);
+    transition: .5s;
+    cursor: pointer;
+}
+.c-title{
+   margin-bottom: 45px;
+}
+.c-title span{
+    font-size: 25px;
+    font-weight: 550;
+    color: rgb(252, 177, 39);
+}
+.c-title h1{
+    color: rgb(8, 8, 77);
+}
+.c-title p{
+    font-size: 14px ;
+    color: gray;
+}
+
+
+.card{
+    width: 235px;
+    /* background-color: skyblue; */
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 13px;
+    margin: 10px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.upper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+}
+.icon-box{
+    width: 40px;
+    height: 40px;
+    background:rgba(191, 211, 252, 0.74);
+    color: rgba(4, 84, 255, 0.836);
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.icon-box:hover{
+    transform: scale(1.04);
+    transition: .5s;
+}
+.context{
+    text-align: left;
+    margin-left: 5px;
+}
+.context p{
+    color: rgba(9, 85, 248, 0.836);
+    font-size: 18px;
+    font-weight: 700;
+}
+.context span{
+    color: gray;
+}
+.btn-box{
+    width: 100%;
+}
+.btn-box button{
+   width: 100%;
+   padding: 6px 12px;
+   font-size: 17px;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   background:rgba(191, 211, 252, 0.74) ;
+   position: relative;
+   font-weight: 530;
+   color:rgba(9, 85, 248, 0.836) ;
+   margin-top: 4px;
+}
+.btn-box div{
+    position: absolute;
+    background: transparent;
+}
+.btn-box button:hover{
+    transform: scale(0.9);
+    transition: .5s;
+    cursor: pointer;
+    font-size: 19px;
+    background-color:rgba(9, 85, 248, 0.836) ;
+    color: white;
+    font-size: 15px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+@media (max-width:1050px) {
+    .contact-box{
+        flex-direction: column-reverse;
+    }
+    .c-left{
+        text-align: center;
+    }
+    .row{
+        justify-content: center;
+    }
+}
+@media (max-width:415px){
+    .c-img-box{
+        border-radius: 160px 160px 0px 0px;
+        overflow: hidden;
+        
+    }
+    
+    
+    
+    .c-right .c-img-box img{
+        width: 270px;
+        height: 400px;
+        
+    
+    }
+}

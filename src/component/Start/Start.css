@@ -1,0 +1,35 @@
+
+
+
+.start-box{
+    width: 93%;
+    background-color: rgba(77, 109, 250, 0.973);
+    color: white;
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 27px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.start-box  h1{
+    font-size: 34px;
+}
+.start-box button{
+    width: 120px;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 7px;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgba(161, 160, 250, 0.836);
+    color: white;
+}
+.start-box button:hover{
+    transform: scale(1.07);
+    transition: .5s;
+}
